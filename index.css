@@ -11,3 +11,14 @@ header{
   display: flex;
   justify-content: space-between;
 }
+
+main{
+  display: flex;
+  justify-content: space-around;
+}
+
+img{
+  width: 25%;
+  background-color: rgb(255, 0, 0);
+  box-shadow: 0 10px 14px 0 rgb(255, 0, 0), 0 12px 24px 0 rgb(255, 0, 0);
+}
