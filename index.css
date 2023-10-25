@@ -1,11 +1,31 @@
+body{
+  display: flex;
+  justify-content: center;
 
+  background-image: url(images/AppLogo.webp);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: white
+}
+div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25% 0%; 
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
 .button {
   border-radius: 4px;
-  background-color: #f4511e;
+  background-color: #02010A;
   border: none;
   color: #FFFFFF;
   text-align: center;
-  font-size: 28px;
+  font-size: 15px;
   padding: 20px;
   width: 200px;
   transition: all 0.5s;
