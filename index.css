@@ -1,24 +1,39 @@
 
-body{
-  color: #FFF;
-  background-color: black;
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
 
-header{
-  background-color: rgb(14, 14, 14);
-  margin: 0% 0%;
-  padding: 0% 0%;
-  display: flex;
-  justify-content: space-between;
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
-main{
-  display: flex;
-  justify-content: space-around;
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
 }
 
-img{
-  width: 25%;
-  background-color: rgb(255, 0, 0);
-  box-shadow: 0 10px 14px 0 rgb(255, 0, 0), 0 12px 24px 0 rgb(255, 0, 0);
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
